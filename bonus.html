@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos especiales</title>
+    <style>
+        .class1{
+            display: block;
+            background-color: aqua;
+        }
+        .container{
+            display: flex;
+            border: 1px solid;
+            /* flex-direction: row;
+            flex-wrap: wrap-reverse; es equivalente a la linea de abajo*/
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 10px;
+            height: 600px;
+        }
+        .container>div{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            color: #000000;
+        }
+        .container>div.larger{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            color: #000000;
+        }
+        .container>div.first{
+            order: 0;/*revisar funcionamiento*/
+            flex-grow: 1;
+        }
+        .container>div.second{
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    Productos especiales
+    <div class="class1">Parrafo 1</div>
+    <div class="container">
+        <div>1</div>
+        <div class="first">2</div>
+        <div class="larger">3</div>
+        <div class="second">4</div>
+    </div>
+</body>
+</html>

@@ -1,3 +1,133 @@
-<html>
-  
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Acerca de</title>
+        <style>
+            #titulo{
+                font-weight: bold;
+                font-size: 1.5cm;
+                /* color: blue;
+                color: #000000; */
+                color: rgb(255, 0, 0);
+                text-align: left;
+                vertical-align: middle;
+                text-transform: capitalize;
+                letter-spacing: 5px;
+                text-shadow: 2px 2px #000000;
+                /* background-color: #00f000; */
+                
+                border: 1px #000000 solid;
+                /* border-color: #000000;
+                border-style: solid;
+                border-left: 5px #000000 solid; */
+                 padding: 10px 5px 15px 20px; /*top right bottom left */
+                /* padding-left: 20px;
+                padding-top: 10px;
+                padding-right: 5px;
+                padding-bottom: 15px; */
+                /* margin: 50px; */
+                margin-left: 20px;
+                margin-top: 10px;
+                margin-right: 5px;
+                margin-bottom: 15px;
+
+                outline-style: solid;
+                outline-color: blue;
+                outline-width: 10px;
+                outline-offset: 2px;
+                /*16px * 1.5 = 24px*/
+            }
+            .mitexto{
+                /* font-family: 'Lucida Sans', 'Lucida Sans Regular'; */
+                font-size: 0.4cm;
+                text-align: justify;
+                text-decoration: underline;
+                text-indent: 20px;
+                line-height: 1.5;
+            }
+            table, th, td{
+                border: 1px solid;
+                width: 100%;
+            }
+            table{
+                border-collapse: collapse;
+            }
+            th{
+                height: 50px;
+                text-align: left;
+                vertical-align: baseline;
+                background-color: gray;
+                color: wheat;
+            }
+            td{
+                padding: 10px;
+                /* box-sizing: border-box; no se suma el border padding width*/
+                box-sizing: content-box; /*se suma el border padding width*/
+            }
+            td:hover{
+                background-color: aquamarine;
+            }
+            tr:nth-child(even){
+                background-color: rosybrown;
+            }
+            tr:nth-child(odd){
+                background-color: hotpink;
+            }
+            a:hover{
+                color: red;
+            }
+            a:visited{
+                color: greenyellow;
+            }
+            a:link{
+                color: blueviolet;
+            }
+            a[target="_blank"]{
+                background-color: greenyellow;
+            }
+            p:nth-child(5){/*puedes elegir que numero de elemento usar, blank:se usa para cuando el elemento esta vacio*/
+                background: yellow;
+            }
+            p::first-letter{
+                color: firebrick;
+            }
+            p::first-line{
+                color: violet;
+            }
+            .micombinado>p{
+                background: seagreen;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="titulo">Acerca de</p>
+        <p id="texto" class="mitexto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus velit mi, in euismod diam rutrum ac. Duis in maximus ipsum. Aenean a libero at quam luctus porttitor vel a augue. Praesent eros leo, viverra in malesuada vel, auctor non ipsum. Duis fermentum sem non augue tincidunt, nec convallis massa volutpat. Proin et aliquet metus. Donec auctor risus scelerisque, gravida massa vel, pellentesque mauris. Suspendisse erat lacus, semper tristique purus quis, ultrices efficitur lorem. Nunc placerat interdum est, eget suscipit massa imperdiet eu.</p>
+        <div style="width: 60%;">
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Telefono</th>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>a@ejm.com</td>
+                    <td>123</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>b@ejm.com</td>
+                    <td>124</td>
+                </tr>
+            </table>
+        </div>
+        <a href="https://www.youtube.com" target="_blank">Mis otros productos</a>
+        <p>Primer elemento</p>
+        <p>Segundo elemento</p>
+        <div class="micombinado">
+            <p>Platanos amarillos</p>
+        </div>
+    </body>
 </html>
