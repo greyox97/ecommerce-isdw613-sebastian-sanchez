@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <title>Productos especiales</title>
     <style>
         .class1{
             display: block;
             background-color: aqua;
         }
-        .container{
+        .container-fluid{
             display: flex;
             border: 1px solid;
             /* flex-direction: row;
@@ -20,31 +23,55 @@
             gap: 10px;
             height: 600px;
         }
-        .container>div{
+        .container-fluid>div{
             width: 100px;
             height: 100px;
-            background-color: aquamarine;
+            background-color: rgb(100, 113, 181);
             color: #000000;
         }
-        .container>div.larger{
+        .container-fluid>div.larger{
             width: 200px;
             height: 200px;
-            background-color: red;
+            background-color: rgb(163, 145, 145);
             color: #000000;
         }
-        .container>div.first{
+        .container-fluid>div.first{
             order: 0;/*revisar funcionamiento*/
             flex-grow: 1;
         }
-        .container>div.second{
+        .container-fluid>div.second{
             flex-grow: 2;
         }
     </style>
 </head>
 <body>
-    Productos especiales
-    <div class="class1">Parrafo 1</div>
-    <div class="container">
+    <h1 class="display-3 p-3 text-primary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-5">Productos especiales</h1>
+    <dl class="row">
+        <dt class="col-sm-3">Description lists</dt>
+        <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+      
+        <dt class="col-sm-3">Term</dt>
+        <dd class="col-sm-9">
+          <p>Definition for the term.</p>
+          <p>And some more placeholder definition text.</p>
+        </dd>
+      
+        <dt class="col-sm-3">Another term</dt>
+        <dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.</dd>
+      
+        <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+        <dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
+      
+        <dt class="col-sm-3">Nesting</dt>
+        <dd class="col-sm-9">
+          <dl class="row">
+            <dt class="col-sm-4">Nested definition list</dt>
+            <dd class="col-sm-8">I heard you like definition lists. Let me put a definition list inside your definition list.</dd>
+          </dl>
+        </dd>
+    </dl>
+    <!-- <div class="class1">Parrafo 1</div> -->
+    <div class="container-fluid">
         <div>1</div>
         <div class="first">2</div>
         <div class="larger">3</div>

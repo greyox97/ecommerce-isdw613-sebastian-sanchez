@@ -1,0 +1,17 @@
+$color1: sandybrown;
+$color2: sienna;
+
+h1{
+    color: $color1;
+}
+h2{
+    color: $color2;
+}
+.cell-header{
+    $color1: blanchedalmond;
+    background-color: $color1;
+    font-weight: bold;
+}
+p{
+    font-size: 11px;
+}

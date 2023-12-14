@@ -1,47 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="dark">
     <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
         <title>Amatista</title>
-        <link rel="stylesheet" href="assets/styles/styles.css">
-        <style>
-            h1{
-                color: sandybrown;
-            }
-        </style>
+        <link rel="stylesheet" href="assets/styles/stylesProduct.css" class="href">
     </head>
     <body>
-        <h1>Amatista</h1>
-        <h2>Detalles</h2>
-        <img src="assets/img/amatista.png" width="400px">
-        <p style="font-size: 11px;">
-            Lorem ipsum dolor sit amet, consectetur adipiscing 
-            elit. Proin nec velit ultrices velit condimentum 
-            cursus. Orci varius natoque penatibus et magnis dis 
-            parturient montes, nascetur ridiculus mus. Vivamus 
-            aliquet id ante et porta. Lorem ipsum dolor sit amet, 
-            consectetur adipiscing elit. Mauris sagittis maximus 
-            felis, ac finibus quam pharetra sed. Praesent in 
-            blandit tellus. Proin a varius nisl, vel tempor odio. 
-            Praesent enim sapien, lobortis in magna a, dapibus 
-            tempus neque. Aliquam tempor accumsan elit, nec 
-            dictum augue. Vestibulum pulvinar mauris eu nibh 
-            laoreet, quis aliquet enim ultrices. Suspendisse 
-            lacinia justo et urna dignissim efficitur. Proin 
-            nulla turpis, blandit vel luctus ac, pellentesque 
-            eget lacus. Nulla pulvinar, nulla in imperdiet 
-            semper, lectus urna congue est, imperdiet mollis 
-            odio mi quis nunc. Phasellus ullamcorper metus ac 
-            dolor gravida, sed volutpat elit sagittis. Integer 
-            sapien arcu, eleifend quis odio nec, placerat 
-            placerat nibh.
-        </p>
+        <h1 class="display-3 p-3 text-secondary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">Amatista</h1>
+        <h1 class="display-6">Detalles</h1>
+        <img src="assets/img/amatista.png" width="400px" class="img-fluid">
+        <ul class="list-unstyled">
+            <li>This is a list.</li>
+            <li>It appears completely unstyled.</li>
+            <li>Structurally, it's still a list.</li>
+            <li>However, this style only applies to immediate child elements.</li>
+            <li>Nested lists:
+              <ul>
+                <li>are unaffected by this style</li>
+                <li>will still show a bullet</li>
+                <li>and have appropriate left margin</li>
+              </ul>
+            </li>
+            <li>This may still come in handy in some situations.</li>
+          </ul>
         <hr>
-        <p>
-            Precio $50
-        </p>
+        <p>Precio $50</p>
         <hr>
-        <h2>Ficha t&eacute;cnica</h2>
-        <table>
+        <h2 class="display-6">Ficha t&eacute;cnica</h2>
+        <!-- <table>
             <tr>
                 <td class="cell-header">Peso: </td>
                 <td>100g</td>
@@ -54,6 +42,19 @@
                 <td class="cell-header">Terminado: </td>
                 <td>sin tratar</td>
             </tr>
+        </table> -->
+        <table class="table table-dark table-striped">
+            <tr>
+                <td class="cell-header table-primary">Peso: </td>
+                <td>100g</td>
+            </tr>
+            <tr>
+                <td class="cell-header table-primary">Dimensiones: </td>
+                <td>5 x 10 x 8 cm</td>
+            </tr>
+            <tr>
+                <td class="cell-header table-primary">Terminado: </td>
+                <td>sin tratar</td>
         </table>
     </body>
 </html>
